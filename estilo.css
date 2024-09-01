@@ -1,0 +1,327 @@
+/* geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+
+body{
+    background-color: #57356A;
+    height: 100vh;
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+
+.botao-contato button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600px;
+    background-color: #897098;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+span{
+    color: #897098;
+}
+
+
+
+/* cabeçalho */
+
+header{
+    padding: 40px 0;
+    position: relative;
+}
+
+
+header > .menu-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+header a{
+    color: #d1d1d1;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.10)
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+button{
+    color: #fff;
+
+}
+header .botao-contato{
+    position: absolute;
+    right: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.botao-contato button:hover{
+    box-shadow: 0px 0px 8px #591183;
+    transform: scale(1.05);
+}
+
+/* Inicio*/
+
+section.inicio-site{
+    padding: 200px 38%;
+}
+
+section.inicio-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.inicio-site h1{
+    color: #fff;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+}
+
+
+.inicio-site p{
+    color: #fff;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.botao-contato{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*Sobre mim*/
+
+section.sobre-mim{
+    padding: 40px 25%;
+}
+
+img {
+   width: 300px;
+   height: 500px;
+   border-radius: 20px;
+}
+
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre-mim .texto-sobre{
+    color: #fff;
+}
+.sobre-mim .texto-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre-mim .texto-sobre h2 span{
+    color:#897098;
+    display: block;
+}
+.sobre-mim .texto-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*formação*/
+
+.formacao .titulo{
+    padding: 10% 4% 4% 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.html5, .css3, .js {
+    width: 100px;
+    height: 100px;
+}
+
+.js {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+/*portifolio*/
+
+.portfolio {
+    padding: 40px 4%;
+    text-align: center;
+}
+
+.portfolio .titulo {
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.flex {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 5s;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+/*FALE COMIGO*/
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #8970984b;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    height: 150px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: #fff;
+    color: #897098;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #591183;
+    transform: scale(1.05);
+}
+
+/*rodapé*/
+
+footer.menu-wrapper {
+    background-color: #89709831;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.line-footer p {
+    margin: 0;
+}
+
+.line-footer a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.line-footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-widht: 1470px){
+    /*geral*/
+    
+    .flex{
+        flex-direction: column;
+    }
+
+
+
+
+    /*cabeçalho*/
+    .menu-interativo, .botao-contato{
+        display: none;
+
+    }
+}
